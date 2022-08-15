@@ -1,0 +1,119 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    background-image: url(./img/fondo.jpeg), linear-gradient(to right,rgb(114, 114, 114),rgb(155, 155, 155));
+    background-position:center;
+    background-size:cover;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+}
+#tabla{
+    margin: 5rem 0 0 5rem;
+    position: relative !important;
+    /* background-color: black; */
+}
+img:not(#trofeo){
+    width: 8rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgb(83, 206, 255);
+}
+#trofeo{
+    width: 5rem;
+}
+tr{
+    height: 140px;
+}
+td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px !important;
+}
+.front{
+    transition: all 200ms;
+}
+.front:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transform: scale(1.05)
+}
+#mensaje{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin: 0%;
+    z-index: 2500;
+    color: white;
+    opacity: 0;
+}
+#click{
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    margin: 0%;
+    z-index: 2500;
+    color: white;
+    opacity: 0;
+}
+/* ASIDE */
+aside{
+    width: 25%;
+    height: 100vh;
+    /* background-color: #ffffff; */
+    position: relative;
+}
+.info{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(153, 153, 153);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0) ;
+}
+#caja1{
+    position: absolute;
+    top: 4rem;
+    left: 8rem;
+}
+#caja2{
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+    width: 15rem;
+}
+#caja3{
+    position: absolute;
+    top: 23rem;
+    left: 6rem;
+}
+/* MODAL */
+#btnModal{
+    display: none !important;
+}
+.modal-header h3{
+    color: rgb(236, 236, 236) !important;
+    font-weight: bold !important;
+    font-size: 2rem;
+    -webkit-text-stroke: black 1px !important;
+}
+.modal-body{
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding-right: 5rem !important;
+}
+.modal-body h3{
+    -webkit-text-stroke: black 1.5px;
+    font-weight: bold;
+}
